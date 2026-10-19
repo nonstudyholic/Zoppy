@@ -4,7 +4,7 @@ export default function StorySection() {
   return (
     <section className="story-section shell" id="story">
       <div className="section-heading">
-        <p className="eyebrow">01 / the character sheet</p>
+        <p className="eyebrow">
         <h2>Your own baby,<br /><em>with a story to tell.</em></h2>
       </div>
       <div className="story-grid">
