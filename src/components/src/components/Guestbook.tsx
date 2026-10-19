@@ -33,7 +33,7 @@ export default function Guestbook() {
   return (
     <section className="guestbook shell">
       <div>
-        <p className="eyebrow">04 / leave a little love</p>
+        <p className="eyebrow">03 / leave a little love</p>
         <h2>What would you<br /><em>tell Zoppy?</em></h2>
       </div>
       <form className="guestbook-form" onSubmit={handleSendNote}>
