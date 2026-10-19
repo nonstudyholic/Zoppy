@@ -12,7 +12,7 @@ export default function Hero() {
     const nextTouchCount = touchCount + 1;
     setTouchCount(nextTouchCount);
     setTouchMessage(nextTouchCount >= 3 ? 'Don’t do it... hehe!' : 'Hehe!');
-    playGiggle();
+    if (soundOn) playGiggle();
   };
 
   const handleZoppyKeyDown = (event: KeyboardEvent<HTMLDivElement>): void => {
@@ -34,12 +34,12 @@ export default function Hero() {
         </div>
         <div className="hero-note"><span className="note-line" /> Made with wonder, mischief & 100% original ideas</div>
       </div>
-      <div className={`hero-art reaction-${touchCount % 4}`} aria-label="A friendly light violet slime character named Zoppy">
-        <div className="sunburst" />
-        <div className="floating-star star-one">✦</div>
-        <div className="floating-star star-two">✦</div>
-        <div className="floating-heart">♥</div>
-        <div className="character-shadow" />
+      <div className={`hero-art reaction-${touchCount % 4}`} role="group" aria-label="A friendly light violet slime character named Zoppy">
+        <div className="sunburst" aria-hidden="true" />
+        <div className="floating-star star-one" aria-hidden="true">✦</div>
+        <div className="floating-star star-two" aria-hidden="true">✦</div>
+        <div className="floating-heart" aria-hidden="true">♥</div>
+        <div className="character-shadow" aria-hidden="true" />
         <div className={`zoppy wiggle-${touchCount % 4}`} role="button" tabIndex={0} aria-label="Click Zoppy for a giggle" onClick={handleZoppyClick} onKeyDown={handleZoppyKeyDown}>
           <div className="bow bow-left" /><div className="bow bow-right" /><div className="bow-center" />
           <div className="face">
