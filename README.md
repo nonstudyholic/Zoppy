@@ -2,7 +2,7 @@
 
 A tiny, squishy, original-character portfolio: **Zoppy**, a curious light-violet slime with a talent for making the world feel lighter.
 
-**Live site:** https://YOUR-SITE-URL
+**Live site:** https://custom-character-web-55oi.bolt.host
 
 ## Features
 
