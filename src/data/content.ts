@@ -22,3 +22,15 @@ export const projects: Project[] = [
   { type: '02 / experience', title: 'Zoppy Says Hello', description: 'A tiny interactive storybook where every click uncovers a new friendly surprise.', accent: 'orange' },
   { type: '03 / archive', title: 'Moonlight Meadow', description: 'A dreamy field guide to Zoppy’s firefly friend, favorite place, and softest memories.', accent: 'lilac' },
 ];
+export type OriginChapter = {
+  number: string;
+  title: string;
+  text: string;
+};
+
+export const originChapters: OriginChapter[] = [
+  { number: '01', title: 'A sleepy hiccup', text: 'Under a big silver moon, a very sleepy jellyfish let out the tiniest hiccup.' },
+  { number: '02', title: 'A giggle in a bubble', text: 'The hiccup came out as a giggle, trapped inside one shiny bubble, and it drifted off across the reef.' },
+  { number: '03', title: 'Plop!', text: 'The bubble floated down into a moonlit tide pool and went pop!' },
+  { number: '04', title: 'Hello, world!', text: 'Out bounced a little violet slime, still holding that giggle. That is why Zoppy giggles whenever she gets squished.' },
+];
