@@ -1188,3 +1188,52 @@ h2 em {
 .site.night .sent-error {
   color: #ff9a9a;
 }
+/* ---------- Sound toggle ---------- */
+.sound-toggle {
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .2s, border-color .2s;
+}
+
+.sound-toggle:hover {
+  color: var(--berry);
+  border-color: var(--berry);
+}
+
+.sound-toggle:focus-visible {
+  outline: 2px solid var(--berry);
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .sound-toggle {
+    left: 26px;
+    bottom: -14px;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
