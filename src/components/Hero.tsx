@@ -1,5 +1,5 @@
 import { useState, type KeyboardEvent } from 'react';
-import { ArrowDown, ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Sparkles, Volume2, VolumeX } from 'lucide-react';
 import { useGiggle } from '@/hooks/useGiggle';
 
 export default function Hero() {
