@@ -24,6 +24,7 @@ export default function StorySection() {
           ))}
         </div>
       </div>
+      <OriginStory />
     </section>
   );
 }
