@@ -389,9 +389,27 @@ h2 em {
   width: 76px;
   height: 96px;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 70%, #e28be4 0 15%, #7c348d 16% 55%, #351843 56%);
+  background: #351843;
   border: 8px solid #532258;
-  box-shadow: 0 4px 0 #efc5f6, inset 6px 8px 9px #f2abff77;
+  box-shadow: 0 4px 0 #efc5f6;
+  overflow: hidden;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: inset 6px 8px 9px #f2abff77;
+  pointer-events: none;
+}
+
+.eye-iris {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 70%, #e28be4 0 15%, #7c348d 16% 55%, #351843 56%);
+  transition: transform .12s ease-out;
+  will-change: transform;
 }
 
 .eye-left {
