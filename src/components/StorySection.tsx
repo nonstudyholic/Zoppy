@@ -1,4 +1,5 @@
 import { traits } from '@/data/content';
+import OriginStory from '@/components/OriginStory';
 
 export default function StorySection() {
   return (
