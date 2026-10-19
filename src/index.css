@@ -321,8 +321,16 @@ h2 em {
   box-shadow: inset -20px -22px 35px #8735a566, inset 15px 17px 30px #f6c9ff99, 0 15px 0 #a752c18a;
   animation: bob 4s ease-in-out infinite;
   transform-origin: 50% 92%;
-  cursor: pointer;
+  cursor: grab;
   outline: 0;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.zoppy:active {
+  cursor: grabbing;
 }
 
 .zoppy:focus-visible {
