@@ -6,6 +6,7 @@ export default function Hero() {
   const [touchCount, setTouchCount] = useState(0);
   const [touchMessage, setTouchMessage] = useState('');
   const playGiggle = useGiggle();
+  const [soundOn, setSoundOn] = useState(true);
 
   const handleZoppyClick = (): void => {
     const nextTouchCount = touchCount + 1;
