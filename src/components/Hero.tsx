@@ -49,8 +49,12 @@ export default function Hero() {
             <div className="mouth"><span /></div>
           </div>
         </div>
-        {touchMessage && <div className="touch-bubble">{touchMessage} <span>♥</span></div>}
+        <span className="sr-only" role="status" aria-live="polite">{touchMessage}</span>
+        {touchMessage && <div className="touch-bubble" aria-hidden="true">{touchMessage} <span>♥</span></div>}
         <div className="art-caption"><span>01</span> tap Zoppy for a giggle</div>
+        <button type="button" className="sound-toggle" onClick={() => setSoundOn(!soundOn)}>
+          {soundOn ? <Volume2 size={13} /> : <VolumeX size={13} />} sound {soundOn ? 'on' : 'off'}
+        </button>
       </div>
     </section>
   );
